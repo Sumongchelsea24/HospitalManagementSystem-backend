@@ -13,7 +13,7 @@ public class Appointment {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	@Column(name="name")
 	private String name;
@@ -32,7 +32,7 @@ public class Appointment {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Appointment(long id, String name, String age, String symtomps, String number) {
+	public Appointment(Long id, String name, String age, String symtomps, String number) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -41,11 +41,11 @@ public class Appointment {
 		this.number = number;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -80,6 +80,8 @@ public class Appointment {
 	public void setNumber(String number) {
 		this.number = number;
 	}
+
+	
 	
 	
 	

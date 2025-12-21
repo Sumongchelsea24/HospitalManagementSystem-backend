@@ -13,7 +13,7 @@ public class Medicine {
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	@Column(name = "drug_name")
 	private String drugName;
@@ -26,18 +26,18 @@ public class Medicine {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Medicine(long id, String drugName, String stock) {
+	public Medicine(Long id, String drugName, String stock) {
 		super();
 		this.id = id;
 		this.drugName = drugName;
 		this.stock = stock;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -56,6 +56,8 @@ public class Medicine {
 	public void setStock(String stock) {
 		this.stock = stock;
 	}
+
+	
 	
 	
 	
